@@ -1,7 +1,7 @@
 import React from 'react';
 import { ipcRenderer } from 'electron';
 import { Text, TextInput, View } from 'react-native-electron';
-import Connexion from '../components/connexion';
+import Connexion from '../components/Connexion';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 
