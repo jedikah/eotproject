@@ -16,7 +16,8 @@ const useStyle = makeStyles(theme =>
   })
 );
 
-const Welcome = () => {
+const Welcome = props => {
+  console.log(props);
   const classes = useStyle({});
   return (
     <div className="App" className={classes.root}>
