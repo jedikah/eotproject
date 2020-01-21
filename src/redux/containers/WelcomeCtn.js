@@ -1,11 +1,16 @@
 import { connect } from "react-redux";
 
-import Welcome from "../../pages/welcome";
+import welcome from "../../pages/welcome";
 
 const mapStateToProps = state => ({
-  clients: state.client.clients
+  clients: state.client.clients,
+  travaux: state.travau.travaux,
+  factures: state.facture.factures,
+  convocations: state.convocation.convocations,
+  pvs: state.pv.pvs,
+  lettreCharges: state.lettreCharge.lettreCharges
 });
 
 const mapDispatchToProps = dispatch => {};
 
-export default connect(mapStateToProps)(Welcome);
+export default connect(mapStateToProps)(welcome);
